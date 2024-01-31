@@ -12,58 +12,96 @@
 </head>
 <body>
     <main>
-        <header>
-            <h1>Webáruház</h1>
-        </header>
-        <nav>
-                <ul class="nav">
-                  <li class="nav-item">
-                    <a class="nav-link" href="index.html">Kezdőlap</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#">Galéria</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="merettablazat.html">Mérettáblázat</a>
-                  </li>
-                </ul>
-              </div>
-        </nav>
-        <aside>
-            <h2>Keresési feltételek</h2>
-            <div class="mb-3 mt-3">
-                <label for="termeknev" class="form-label">A termék neve:</label>
-                <input type="text" class="form-control" id="termeknev" placeholder="A termék neve" name="termeknev">
-              </div>
-              <label for="customRange" class="form-label">Szűrés ár szerint:</label>
-              <br>
-              <input type="range" class="default-range" id="customRange">
-        </aside>
-        <article>
-            <div class="card" style="width:400px">
-                <img class="card-img-top" src="../bootstrap4/img_avatar1.png" alt="Card image" style="width:100%">
-                <div class="card-body">
-                  <h4 class="card-title"></h4>
-                  <p class="card-text">Some example text some example text. John Doe is an architect and engineer</p>
-                  <a href="#" class="btn btn-primary">See Profile</a>
+        <div class="row">
+            <header class="col-md-12">
+                <h1>Webáruház</h1>
+            </header>
+            <nav class="col-md-12">
+                    <ul class="nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Kezdőlap</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Galéria</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="merettablazat.html">Mérettáblázat</a>
+                    </li>
+                    </ul>
                 </div>
-              </div>
-        </article>
-        <aside>
-            <h2>Kapcsolódó cikkek</h2>
-            <ul class="list-group">
-                <li class="list-group-item">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum veniam minus deserunt autem veritatis! Esse, temporibus fuga quibusdam provident ea dignissimos impedit voluptas hic tempora earum inventore porro ducimus illo.</li>
-                <li class="list-group-item">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo ad sequi nam magnam voluptatibus inventore pariatur deleniti labore similique</li>
-                <li class="list-group-item">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</li>
-              </ul>
-            <h2>Kapcsolódó cikkek</h2>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Obcaecati ea porro, consequatur omnis debitis quam neque nulla unde dolorem asperiores error autem tempore, mollitia fuga deleniti voluptate placeat perspiciatis delectus.
-            Numquam laborum optio nulla, autem in consequuntur dolores non odio natus velit a, minus deserunt ipsam sequi sunt fugit? Nesciunt ad odit fuga iusto optio perspiciatis ratione nisi dignissimos reprehenderit.
-            Nam, omnis corrupti aliquam exercitationem asperiores optio odio veritatis velit unde accusantium, autem tempora hic maxime, esse iste et laudantium sit deleniti sequi labore eaque nulla impedit cum fugit! Possimus.</p>
-        </aside>
-        <footer>
-            <p>Baksa Bence, Halász Gergő, Kovács Gábor</p>
-        </footer>
+            </nav>
+            <div class="row">
+            <aside class="col-md-3">
+                <h2>Keresési feltételek</h2>
+                <div class="mb-3 mt-3">
+                    <label for="termeknev" class="form-label">A termék neve:</label>
+                    <input type="text" class="form-control" id="termeknev" placeholder="A termék neve" name="termeknev">
+                </div>
+                <label for="customRange" class="form-label">Szűrés ár szerint:</label>
+                <br>
+                <input type="range" class="default-range" id="customRange">
+            </aside>
+            <article class="col-md-6">
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="card">
+                            <h4 class="card-title">Retro Gamer férfi poló</h4>
+                            <img class="card-img-top" src="kepek/polo1.jpg" alt="polo">
+                            <p class="card-text">A pólódat kifordítva 30 fokon, szárítógép használata nélkül mosd ki, így vigyázva a 100% pamut szövet és a nyomat minőségére.</p>
+                            <a href="#" class="btn btn-primary">Kosárba</a>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card">
+                            <h4 class="card-title">Túléltem még egy meetinget</h4>
+                            <img class="card-img-top" src="kepek/polo2.jpg" alt="polo">
+                            <p class="card-text">Legnépszerűbb prémium pólónk, ami garantáltan a kedvenced lesz!</p>
+                            <a href="#" class="btn btn-primary">Kosárba</a>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card">
+                            <h4 class="card-title">Az éveim múlásával</h4>
+                            <img class="card-img-top" src="kepek/polo3.jpg" alt="polo">
+                            <p class="card-text">Simogatni-valóan puha anyag, rövid ujj és testhez állóbb fazon a stílusos és kényelmes megjelenésért. Ha szereted a laza viseletet, rendelj egy mérettel nagyobbat!</p>
+                            <a href="#" class="btn btn-primary">Kosárba</a>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card">
+                            <h4 class="card-title">I hate...</h4>
+                            <img class="card-img-top" src="kepek/polo4.jpg" alt="polo">
+                            <p class="card-text">Vicces póló , vicces ajándék, szülinapi ajándék!</p>
+                            <a href="#" class="btn btn-primary">Kosárba</a>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card">
+                            <h4 class="card-title">Képzeld el az életet</h4>
+                            <img class="card-img-top" src="kepek/polo5.jpg" alt="polo">
+                            <p class="card-text">Divatos póló, akár hétköznapi viseletként is megállja a helyét , nagyon jó minőségű anyaga miatt. Az általunk gyártott pólóknál nem kell attól tartanod, hogy kinyúlik az anyag, kifakul, vagy berepedezik a minta. Anyaga 100% Pamut Mérettáblázatot a képek között találsz. 25 féle szín közül választhatsz!</p>
+                            <a href="#" class="btn btn-primary">Kosárba</a>
+                        </div>
+                    </div>
+            </div>
+            </article>
+            <aside class="col-md-3">
+                <h2>Kapcsolódó cikkek</h2>
+                <ul class="list-group">
+                    <li class="list-group-item">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum veniam minus deserunt autem veritatis! Esse, temporibus fuga quibusdam provident ea dignissimos impedit voluptas hic tempora earum inventore porro ducimus illo.</li>
+                    <li class="list-group-item">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo ad sequi nam magnam voluptatibus inventore pariatur deleniti labore similique</li>
+                    <li class="list-group-item">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</li>
+                </ul>
+                <h2>Kapcsolódó cikkek</h2>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Obcaecati ea porro, consequatur omnis debitis quam neque nulla unde dolorem asperiores error autem tempore, mollitia fuga deleniti voluptate placeat perspiciatis delectus.
+                Numquam laborum optio nulla, autem in consequuntur dolores non odio natus velit a, minus deserunt ipsam sequi sunt fugit? Nesciunt ad odit fuga iusto optio perspiciatis ratione nisi dignissimos reprehenderit.
+                Nam, omnis corrupti aliquam exercitationem asperiores optio odio veritatis velit unde accusantium, autem tempora hic maxime, esse iste et laudantium sit deleniti sequi labore eaque nulla impedit cum fugit! Possimus.</p>
+            </aside>
+            </div>
+            <footer class="col-md-12">
+                <p>Baksa Bence, Halász Gergő, Kovács Gábor</p>
+            </footer>
+        </div>
     </main>
 </body>
 </html>
