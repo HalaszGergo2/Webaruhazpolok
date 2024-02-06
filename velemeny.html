@@ -13,120 +13,106 @@
 </head>
 
 <body>
-    <main>
-        <div class="row">
-            <header class="col-md-12">
-                <h1>Webáruház</h1>
-            </header>
-            <nav class="col-md-12">
-                <ul class="nav">
-                    <li class="nav-item">
-                        <a class="nav-link" href="index.html">Kezdőlap</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Galéria</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="merettablazat.html">Mérettáblázat</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="velemeny.html">Vélemény</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="profil.html">Profil</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="admin.html">Admin</a>
-                    </li>
-                </ul>
-        
-        </nav>
-        <form action="#" method="get">
-            <fieldset>
-                <div style="margin-left: 20px;">
-                    <legend>Visszajelzés típusa</legend>
-                </div>
-                    <div class="form-check">
-                        <input type="radio" id="radio1" name="tipusok" value="megjegyzes">
-                        <label for="radio1">Megjegyzés</label>
-                        <input type="radio" id="radio2" name="tipusok" value="javaslat">
-                        <label for="radio2">Javaslat</label>
-                        <input type="radio" id="radio3" name="tipusok" value="kerdes">
-                        <label for="radio3">Kérdés</label>
-                    </div>
-                    <div class="form-check">
-                        <label for="valasz">Írja le visszajelzését:</label><br>
-                        <textarea id="valasz" name="visszajelzes" rows="4" cols="60"></textarea>
-                    </div>
-                
-                <div class="form-check">
-                    <label for="ajanlas">Ajánlanád-e másnak az oldalt?</label>
-                    <div class="valasztas">
-                        <input type="radio" id="radio4" name="ajanlas" value="igen">
-                        <label for="radio4">Igen</label>
-                        <input type="radio" id="radio5" name="ajanlas" value="nem">
-                        <label for="radio5">Nem</label>
-                    </div>
-                </div>
-                <div class="form-check">
-                    <label for="ertekeles">Mennyire tetszett az oldal? </label>
-                    <input type="range" id="ertekeles" name="ertekeles" min="0" max="10" oninput="this.form.e_sz.value=this.value">
-                    <output id="e_sz">0</output>
-                </div>
-                <div class="form-check">
-                    <label for="email">E-mail cím</label>
-                    <input type="email" id="email" name="email" size="40"><br>
-                </div>
-                <div class="form-check">
-<<<<<<< HEAD
-                    <input type="submit" value="Küldés">
-                </div>
-=======
-                <label for="email">E-mail</label>
-                <input type="text" size="40"><br>
+    <div class="container mt-5">
+        <div class="row justify-content-center">
+            <div class="col-md-6">
+                <header class="text-center mb-4">
+                    <h1>Webáruház</h1>
+                </header>
+                <nav class="text-center mb-4">
+                    <ul class="nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Kezdőlap</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Galéria</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="merettablazat.html">Mérettáblázat</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="velemeny.html">Vélemény</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="profil.html">Profil</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="admin.html">Admin</a>
+                        </li>
+                    </ul>
+                </nav>
+                <form action="#" method="get">
+                    <fieldset>
+                        <legend class="text-center mb-4">Visszajelzés típusa</legend>
+                        <div class="mb-3">
+                            <div class="form-check">
+                                <input type="radio" id="radio1" name="tipusok" value="megjegyzes" class="form-check-input">
+                                <label for="radio1" class="form-check-label">Megjegyzés</label>
+                            </div>
+                            <div class="form-check">
+                                <input type="radio" id="radio2" name="tipusok" value="javaslat" class="form-check-input">
+                                <label for="radio2" class="form-check-label">Javaslat</label>
+                            </div>
+                            <div class="form-check">
+                                <input type="radio" id="radio3" name="tipusok" value="kerdes" class="form-check-input">
+                                <label for="radio3" class="form-check-label">Kérdés</label>
+                            </div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="valasz" class="form-label">Írja le visszajelzését:</label>
+                            <textarea id="valasz" name="visszajelzes" rows="4" cols="60" class="form-control"></textarea>
+                        </div>
+                        <div class="mb-3">
+                            <label for="ajanlas" class="form-label">Ajánlanád-e másnak az oldalt?</label>
+                            <div class="valasztas">
+                                <div class="form-check form-check-inline">
+                                    <input type="radio" id="radio4" name="ajanlas" value="igen" class="form-check-input">
+                                    <label for="radio4" class="form-check-label">Igen</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input type="radio" id="radio5" name="ajanlas" value="nem" class="form-check-input">
+                                    <label for="radio5" class="form-check-label">Nem</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="ertekeles" class="form-label">Mennyire tetszett az oldal? </label>
+                            <input type="range" id="ertekeles" name="ertekeles" min="0" max="10" class="form-range">
+                            <output id="e_sz">0</output>
+                        </div>
+                        <div class="mb-3">
+                            <label for="email" class="form-label">E-mail cím</label>
+                            <input type="email" id="email" name="email" size="40" class="form-control"><br>
+                        </div>
+                        <div class="mb-3">
+                            <input type="submit" value="Küldés" class="btn btn-primary">
+                        </div>
+                    </fieldset>
+                </form>
             </div>
         </div>
-            <div class="form-check">
-                <input type="submit" value="Küldés">
+        <div class="row justify-content-center">
+            <div class="col-md-6">
+                <aside class="text-center mb-4">
+                    <h2>Kapcsolódó cikkek</h2>
+                    <ul class="list-group">
+                        <li class="list-group-item">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum veniam
+                            minus deserunt autem veritatis! Esse, temporibus fuga quibusdam provident ea dignissimos
+                            impedit voluptas hic tempora earum inventore porro ducimus illo.</li>
+                        <li class="list-group-item">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo ad
+                            sequi nam magnam voluptatibus inventore pariatur deleniti labore similique</li>
+                        <li class="list-group-item">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</li>
+                    </ul>
+                </aside>
             </div>
->>>>>>> 4cf3ee750f8fc1d86d5873d5a56dac5a9f97c6c7
-            </fieldset>
-        </form>
-
-
-                <div class="row">
-                    <aside class="col-md-3">
-                    </aside>
-                    <article class="col-md-6">
-                    </article>
-                    <aside class="col-md-3">
-                        <h2>Kapcsolódó cikkek</h2>
-                        <ul class="list-group">
-                            <li class="list-group-item">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum
-                                veniam minus deserunt autem veritatis! Esse, temporibus fuga quibusdam provident ea
-                                dignissimos impedit voluptas hic tempora earum inventore porro ducimus illo.</li>
-                            <li class="list-group-item">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo ad
-                                sequi nam magnam voluptatibus inventore pariatur deleniti labore similique</li>
-                            <li class="list-group-item">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</li>
-                        </ul>
-                        <h2>Kapcsolódó cikkek</h2>
-                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Obcaecati ea porro, consequatur
-                            omnis debitis quam neque nulla unde dolorem asperiores error autem tempore, mollitia fuga
-                            deleniti voluptate placeat perspiciatis delectus.
-                            Numquam laborum optio nulla, autem in consequuntur dolores non odio natus velit a, minus
-                            deserunt ipsam sequi sunt fugit? Nesciunt ad odit fuga iusto optio perspiciatis ratione nisi
-                            dignissimos reprehenderit.
-                            Nam, omnis corrupti aliquam exercitationem asperiores optio odio veritatis velit unde
-                            accusantium, autem tempora hic maxime, esse iste et laudantium sit deleniti sequi labore
-                            eaque nulla impedit cum fugit! Possimus.</p>
-                    </aside>
-                </div>
-                <footer class="col-md-12">
-                    <p>Baksa Bence, Halász Gergő, Kovács Gábor, Kocsi Dorka</p>
-                </footer>
-                </div>
-            
+        </div>
+            <footer class="text-center mt-4">
+                <p>Baksa Bence, Halász Gergő, Kovács Gábor, Kocsi Dorka</p>
+            </footer>
+        </div>
     </main>
 </body>
 
 </html>
+               
+           
